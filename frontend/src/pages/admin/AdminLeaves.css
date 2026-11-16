@@ -1,0 +1,213 @@
+
+.admin-leave-page {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 28px;
+  color: #172033;
+}
+
+.admin-leave-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+
+.admin-leave-heading h1 {
+  margin: 0 0 8px;
+  font-size: 27px;
+  font-weight: 750;
+}
+
+.admin-leave-heading p {
+  margin: 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+.admin-leave-refresh {
+  padding: 10px 18px;
+  border: 1px solid #dce3ed;
+  border-radius: 8px;
+  background: #fff;
+  color: #315c9e;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.admin-leave-section {
+  background: #fff;
+  border: 1px solid #e5eaf1;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 3px 12px rgba(20, 40, 80, 0.035);
+}
+
+.admin-leave-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.admin-leave-toolbar h2 {
+  margin: 0 0 6px;
+  font-size: 19px;
+}
+
+.admin-leave-toolbar p {
+  margin: 0;
+  color: #718096;
+  font-size: 12px;
+}
+
+.admin-leave-toolbar select {
+  padding: 10px 14px;
+  border: 1px solid #dce3ed;
+  border-radius: 8px;
+  background: #fff;
+  color: #35435a;
+}
+
+.admin-leave-table-wrapper {
+  overflow-x: auto;
+}
+
+.admin-leave-table {
+  width: 100%;
+  min-width: 1100px;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.admin-leave-table th {
+  padding: 14px 12px;
+  background: #f5f7fb;
+  text-align: left;
+  color: #66738a;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.admin-leave-table td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #e8edf3;
+  vertical-align: middle;
+}
+
+.admin-leave-table td small {
+  display: block;
+  margin-top: 5px;
+  color: #8994a6;
+}
+
+.admin-leave-table a {
+  color: #2563c7;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.admin-leave-reason {
+  max-width: 180px;
+  overflow-wrap: anywhere;
+}
+
+.admin-leave-status {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.admin-leave-status.pending {
+  background: #fff4d9;
+  color: #9b6a00;
+}
+
+.admin-leave-status.approved {
+  background: #e3f6e9;
+  color: #217b43;
+}
+
+.admin-leave-status.rejected {
+  background: #ffe7e7;
+  color: #b52d2d;
+}
+
+.admin-leave-status.cancelled {
+  background: #edf0f5;
+  color: #647087;
+}
+
+.admin-leave-actions {
+  display: flex;
+  gap: 7px;
+}
+
+.admin-leave-actions button {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.admin-leave-approve {
+  background: #25814b;
+}
+
+.admin-leave-reject {
+  background: #c34444;
+}
+
+.admin-leave-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.admin-leave-alert {
+  padding: 13px 16px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.admin-leave-alert.success {
+  background: #e8f7ed;
+  color: #207443;
+}
+
+.admin-leave-alert.error {
+  background: #fff0f0;
+  color: #bb3434;
+}
+
+.admin-leave-empty {
+  padding: 35px;
+  text-align: center;
+  color: #8994a6;
+}
+
+@media (max-width: 650px) {
+  .admin-leave-page {
+    padding: 16px;
+  }
+
+  .admin-leave-section {
+    padding: 16px;
+  }
+
+  .admin-leave-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-leave-heading h1 {
+    font-size: 22px;
+  }
+}
